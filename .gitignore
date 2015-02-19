@@ -1,1 +1,4 @@
 config.yml
+db/*.sql
+db/*.sql.gz
+files-archives/*.tar.gz
