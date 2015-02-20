@@ -1,4 +1,4 @@
-#require ‘yaml’
+require 'yaml'
 
 vconfig = YAML::load_file('config.yml')
 
