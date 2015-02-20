@@ -1,6 +1,6 @@
 # Local Springboard Development Environment
 
-This is a LAMP Virtual Machine with customizations for doing local development and testing with Springboard.
+This is a LAMP Virtual Machine with customizations for doing local development and testing with Springboard. Note that this does not work on Windows because we're using NFS shares in Vagrant.
 
 # Getting Started
 
@@ -12,7 +12,7 @@ This is a LAMP Virtual Machine with customizations for doing local development a
   - Domain name must match *.local for the wildcard SSL cert.
   - Docroot should point to your local drupal install.
   - If you need to symlink the springboard_modules repo, see below for how to add the `synced_folders` setting.
-6. `vagrant up` An admin password will be needed to add NFS mounts.
+6. `vagrant up` An admin password will be needed to add NFS mounts. If you're using VMWare Fusion, then run `vagrant up --provider=vmware_fusion`.
 7. Edit you host's `/etc/hosts` file to include the IP and domain name from config.yml.
 8. Run `./scripts/add-symlinks.sh` to add symlinks to local.settings.php and the files directory within the codebase. It's expected that your normal settings.php file will include local.settings.php in the same directory. If that's not the case or you don't have a settings.php, create one under sites/default/ that contains:
 
