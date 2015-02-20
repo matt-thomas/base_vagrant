@@ -1,8 +1,5 @@
 domain: springboard.local
 docroot: ../docroot
-synced_folders:
-  - source: ../springboard_modules
-    destination: /springboard_modules
 ip: 192.168.100.100
 name: localdev
 cpus: 2
