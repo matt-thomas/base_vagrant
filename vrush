@@ -1,3 +1,4 @@
 #!/bin/bash
 
+echo "sudo -u apache /usr/local/.composer/vendor/bin/drush @springboard $@"
 vagrant ssh -c "sudo -u apache /usr/local/.composer/vendor/bin/drush @springboard $@"
