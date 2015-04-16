@@ -24,8 +24,8 @@ mv ../../$1_themes/project ../../$1_themes/$1
 mv ../../$1_themes/$1/project.info ../../$1/$1.info
 
 # Initialize the project themes git repository
-git --git-dir=../../$1_themes init
+git init ../../$1_themes
 # Add the remote as origin
-git --git-dir=../../$1_themes remote add origin $project_themes_repo
-git --git-dir=../../$1_themes commit -a -m "Automated initial commit of project themes" --author="Aviator Monkey <jr@jackonsriver.com>"
+git --git-dir=../../$1_themes/.git remote add origin $project_themes_repo
+git --git-dir=../../$1_themes/.git commit -a -m "Automated initial commit of project themes" --author="Aviator Monkey <jr@jackonsriver.com>"
 
